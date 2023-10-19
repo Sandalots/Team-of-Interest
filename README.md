@@ -1,2 +1,2 @@
 # Team-of-Interest
-The Team of Interest proof-of-concept of KIFSS pitch.
+The Team of Interest WIP proof-of-concept repository.
