@@ -11,7 +11,9 @@ class MyApp extends StatelessWidget {
       title: 'KIFSS Proof-of-Concept',
       home: Scaffold(
         appBar: AppBar(title: Text('KIFSS Proof-of-Concept')),
-        body: const Center(child: Text('Hello world.')),
+        body: const Center(
+          child: Text('KIFFS Proof-of-Concept App by Team of Interest.'),
+        ),
       ),
       debugShowCheckedModeBanner: false,
     );
