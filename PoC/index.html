@@ -10,13 +10,23 @@
 
     <!-- Our Styling Sheet-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Our JS Script file-->
+    <script src="js/script.js"></script>
     <title>KIFSS Demo </title>
   </head>
   <body>
+    <!-- Welcome Section -->
+    <div class="welcomeSection">
     <h1> Welcome</h1>
     <p> Please enter data on the following slides to get financial recommendations and resources.</p>
     <button type="submit" class="btn btn-primary">Next</button><br> 
+    </div>
+    <!-- End of Welcome Section-->
 
+
+    <!-- Personal Information section -->
+    <div class="personalSection">
     <br><h1>Personal Information</h1>
     <form>
       <div class="form-group">
@@ -36,7 +46,12 @@
       </div>
       <button type="submit" class="btn btn-primary">Next</button>
     </form>
+    </div>
+    <!-- End of Personal Information-->
 
+
+    <!-- Financial Information section -->
+    <div class = "financialSection">
     <br><h1> Financial Information</h1>
     <div class="form-group">
       <label for="employmentInput">Employment Status: </label>
@@ -55,7 +70,11 @@
       </select>
     </div>
     <button type="submit" class="btn btn-primary">Next</button><br>
+    </div>
+    <!-- End of Financial Information section-->
 
+    <!-- Financial Assets Section-->
+    <div class="financialAssetsSection">
     <br><h1> Financial Assets</h1>
     <form>
       <div class="form-check">
@@ -78,11 +97,17 @@
       </div><br>
       <button type="submit" class="btn btn-primary">Next</button>
     </form>
+    </div>
+    <!-- End of Financial Assets Section-->
     
-    <br><h1> All done? </h1>
+    <!-- All Done? Section-->
+    <div class="allDoneSection">
+    <br><h1> All Done? </h1>
     <p> Click Yes to get personalised financial recommendations and get links to financial resources. Click the Restart button if you would like to restart the Application.</p>
     <button type="submit" class="btn btn-primary">Restart</button>
     <button type="submit" class="btn btn-primary">Yes</button>
+    </div>
+    <!-- End of all Done section-->
 
     <!-- Bootstrap dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
