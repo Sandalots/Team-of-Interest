@@ -4,4 +4,4 @@
 
 // Restart button method
 
-// Submit and append data method
+// Get user input method
