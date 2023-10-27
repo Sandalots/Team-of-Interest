@@ -6,5 +6,4 @@
 
 // Get user input method
 
-
 // Test methods
