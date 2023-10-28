@@ -4,11 +4,4 @@ $(document).ready(function() {
         // redirect to index.html
         window.location.href = "index.html";
     });
-
-    // if exitBtn is clicked destroy the window
-    $('#exitBtn').click(function() {
-        // destroy window
-        window.close();
-    });
-
 });
