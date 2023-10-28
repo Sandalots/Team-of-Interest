@@ -47,5 +47,4 @@ $(document).ready(function() {
         // redirect to output.html
         window.location.href = "output.html";
     });
-
 });
