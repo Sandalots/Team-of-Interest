@@ -1,4 +1,4 @@
-// jquery
+// jquery script for the PoC, currently justs initially hides the forms until each previous form next button is clicked then shows the desired section.
 $(document).ready(function() {
     // hide personalSection class
     $('.personalSection').hide();
