@@ -7,3 +7,19 @@
     top: 10px; /* Adjust the top distance as needed */
     right: 10px; /* Adjust the right distance as needed */
 }
+
+.progress-bar {
+    width: 50%;
+    height: 20px; /* Set the desired height for the progress bar */
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #1c75bc;
+    margin: 0;
+    padding: 0;
+}
