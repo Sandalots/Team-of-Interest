@@ -2,4 +2,4 @@
 The Team of Interest proof-of-concept repository containing the KIFSS pitch demonstration / proof-of-concept and related designs and testing documentations. <br>
 
 ## Contents
-- The Web App (currently just the forms and reccomendation page.)
+- The Web App (currently just the user input forms without the desired design) and the recomendation/resources page.
