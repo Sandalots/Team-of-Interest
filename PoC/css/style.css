@@ -1,3 +1,9 @@
 * {
     margin-left: 5px;
 }
+
+.settings {
+    position: fixed;
+    top: 10px; /* Adjust the top distance as needed */
+    right: 10px; /* Adjust the right distance as needed */
+}
