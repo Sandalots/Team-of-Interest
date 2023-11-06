@@ -25,6 +25,8 @@ $(document).ready(function() {
     $('.financialSection').hide();
     $('.financialAssetsSection').hide();
     $('.allDoneSection').hide(); 
+    // hide results
+    $('.results').hide();
 
     // if nextBtn id is clicked
     $('#welcomeBtn').click(function() {
@@ -169,9 +171,32 @@ $(document).ready(function() {
         location.reload();
     });
 
+
+    // Recommendation logic
+    function recommendationLogic() {
+        // if user is under 18
+        if (personalData.age < 18) {
+            // show recommendation
+            $('.results table').append("You are under 18, we recommend you speak to your parents about your finances.");
+        }
+        // if user is over 18
+        else if (personalData.age >= 18) {
+            // show recommendation
+            $('.results table').append("You are over 18, we recommend you take out a credit card.");
+        }
+    }
+
+
     // if yesBtn is clicked redirect to output.html
     $('#yesBtn').click(function() {
+        // hide allDoneSection
+        $('.allDoneSection').hide();
+
+        // show results
+        $('.results').show();
+
         // redirect to output.html
-        window.location.href = "output.html";
+        recommendationLogic();
+
     });
 });
