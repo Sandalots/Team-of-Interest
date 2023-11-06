@@ -195,6 +195,9 @@ $(document).ready(function() {
         // show results
         $('.results').show();
 
+        // hide progress bar
+        $('.progress-bar').hide();
+
         // redirect to output.html
         recommendationLogic();
 
