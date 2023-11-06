@@ -20,16 +20,10 @@ $(document).ready(function() {
     // show welcomeSection
     $('.welcomeSection ').show();
 
-    // hide personalSection class
+    // hide the other sections
     $('.personalSection').hide();
-
-    // hide financialSection
     $('.financialSection').hide();
-
-    // hide financialAssetsSection
     $('.financialAssetsSection').hide();
-
-    // hide allDoneSection
     $('.allDoneSection').hide(); 
 
     // if nextBtn id is clicked
@@ -44,11 +38,13 @@ $(document).ready(function() {
         $('.financialAssetsSection').hide();
         // hide allDoneSection
         $('.allDoneSection').hide();
+
+        // update progress bar to 1
         updateProgressBar(1);
     });
     
     // if personalBtn id is clicked
-    $('#personalBtn').click(function() {
+    $('#personalBtn').click(function(event) {
         // hide welcomeSection
         $('.welcomeSection ').hide();
         // hide financialSection
@@ -59,11 +55,33 @@ $(document).ready(function() {
         $('.financialAssetsSection').hide();
         // hide allDoneSection
         $('.allDoneSection').hide();
+
+        // update progress bar to 2
         updateProgressBar(2);
+
+        // stop form from submitting
+        event.preventDefault();
+
+        // get personal information inputs
+        var name = $('#nameInput').val();
+        var age = $('#ageInput').val();
+        var gender = $('#genderInput').val();
+        var dependency = $('#dependencyInput').val();
+
+        // store them in an object
+        personalData = {
+            name: name,
+            age: age,
+            gender: gender,
+            dependency: dependency
+        };
+
+        // test to see if data is being stored in personalData object
+        console.log(personalData);
     });
 
     // if financialInformationBtn id is clicked
-    $('#financialInformationBtn').click(function() {
+    $('#financialInformationBtn').click(function(event) {
         // hide welcomeSection
         $('.welcomeSection ').hide();
         // hide financialSection
@@ -74,11 +92,33 @@ $(document).ready(function() {
         $('.financialAssetsSection').show();
         // hide allDoneSection
         $('.allDoneSection').hide();
+
+        // update progress bar to 3
         updateProgressBar(3);
+
+        // stop form from submitting
+        event.preventDefault();
+
+        // get financial information inputs
+        var employmentStatus = $('#employmentInput').val();
+        var householdIncome = $('#incomeInput').val();
+        var homeStatus = $('#homeInput').val();
+        var bankruptcyStatus = $('#bankruptInput').val();
+
+        // store them in an object
+        financialData = {
+            employmentStatus: employmentStatus,
+            householdIncome: householdIncome,
+            homeStatus: homeStatus,
+            bankruptcyStatus: bankruptcyStatus
+        };
+
+        // test to see if data is being stored in financialData object
+        console.log(financialData);
     });
 
     // if financialAssetsBtn id is clicked
-    $('#financialAssetsBtn').click(function() {
+    $('#financialAssetsBtn').click(function(event) {
         // hide welcomeSection
         $('.welcomeSection ').hide();
         // hide financialSection
@@ -89,7 +129,38 @@ $(document).ready(function() {
         $('.financialAssetsSection').hide();
         // show allDoneSection
         $('.allDoneSection').show();
+
+        // update progress bar to 4
         updateProgressBar(4);
+
+
+        // stop form from submitting
+        event.preventDefault();
+  
+        // get financial assets inputs
+        var creditCard = $('#CreditCard').is(':checked');
+        var debitCard = $('#DebitCard').is(':checked');
+        var mortgage = $('#Mortgage').is(':checked');
+        var shortTermLoan = $('#short-termLoan').is(':checked');
+        var longTermLoan = $('#long-termLoan').is(':checked');
+        var pension = $('#Pension').is(':checked');
+        var stocks = $('#Stocks').is(':checked');
+        var bonds = $('#Bonds').is(':checked');
+  
+        // store them in an object
+        assetsData = {
+            creditCard: creditCard,
+            debitCard: debitCard,
+            mortgage: mortgage,
+            shortTermLoan: shortTermLoan,
+            longTermLoan: longTermLoan,
+            pension: pension,
+            stocks: stocks,
+            bonds: bonds
+        };
+    
+        // test to see if data is being stored in assetsData object
+        console.log(assetsData);
     });
 
     // if restartBtn id is clicked
