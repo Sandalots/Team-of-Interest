@@ -28,3 +28,9 @@ th {
     font-size: 2rem;
     font-weight: bold;
 }
+
+/* make form labels bold
+*/
+label {
+    font-weight: bold;
+}
