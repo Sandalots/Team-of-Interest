@@ -197,6 +197,11 @@ $(document).ready(function() {
             $('.results table').append("You have stocks or bonds, we recommend you speak to a financial advisor. <br>");
         }
 
+        // check if bankrupt
+        if (financialData.bankruptcyStatus == "Yes") {
+            // show recommendation
+            $('.results table').append("You have are bankrupt, we recommend you speak to a proper financial advisor ASAP. <br>");
+        }
 
         // set the name class to the name input
         $('.name').append(personalData.name +'.');
