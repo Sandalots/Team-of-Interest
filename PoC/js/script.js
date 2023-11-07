@@ -185,6 +185,19 @@ $(document).ready(function() {
             $('.results table').append("You are over 18, we recommend you take out a credit card.");
         }
 
+        // check if has both loans
+        if (assetsData.shortTermLoan && assetsData.longTermLoan) {
+            // show recommendation
+            $('.results table').append("You have both a short term and long term loan, we recommend you consolidate your loans.");
+        }
+
+        // check if has stocks or bonds
+        if (assetsData.stocks || assetsData.bonds) {
+            // show recommendation
+            $('.results table').append("You have stocks or bonds, we recommend you speak to a financial advisor.");
+        }
+
+
         // set the name class to the name input
         $('.name').append(personalData.name +'.');
     }
