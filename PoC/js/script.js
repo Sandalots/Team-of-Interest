@@ -203,6 +203,12 @@ $(document).ready(function() {
             $('.results table').append("You have are bankrupt, we recommend you speak to a proper financial advisor ASAP. <br>");
         }
 
+        // if ISA is checked and age is less than 25
+        if (assetsData.stocks && personalData.age < 25) {
+            // show recommendation
+            $('.results table').append("You have an ISA and are under 25, unless you really need this we recommend you getting rethinking this asset. <br>");
+        }
+
         // set the name class to the name input
         $('.name').append(personalData.name +'.');
     }
