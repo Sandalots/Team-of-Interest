@@ -182,7 +182,7 @@ $(document).ready(function() {
         // if user is over 18
         else if (personalData.age >= 18) {
             // show recommendation
-            $('.results table').append("You are over 18, we recommend you take out a credit card. <br>");
+            $('.results table').append("You are over 18, although most assets will be avaliable to you do take care and caution. <br>");
         }
 
         // check if has both loans
