@@ -184,6 +184,9 @@ $(document).ready(function() {
             // show recommendation
             $('.results table').append("You are over 18, we recommend you take out a credit card.");
         }
+
+        // set the name class to the name input
+        $('.name').append(personalData.name +'.');
     }
 
 
