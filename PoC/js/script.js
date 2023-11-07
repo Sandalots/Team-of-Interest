@@ -210,6 +210,19 @@ $(document).ready(function() {
 
     // if yesBtn is clicked redirect to output.html
     $('#yesBtn').click(function() {
+        // check if nameInput is empty
+        if ($('#nameInput').val() == "") {
+            alert("Please enter your name.");
+            return false;
+        }
+
+        // check if ageInput is empty
+        if ($('#ageInput').val() == "") {
+            alert("Please enter your age.");
+            return false;
+        }
+
+
         // hide allDoneSection
         $('.allDoneSection').hide();
 
