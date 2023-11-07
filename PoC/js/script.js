@@ -223,4 +223,53 @@ $(document).ready(function() {
         recommendationLogic();
 
     });
+
+
+    // logic for personalBackBtn
+    $('#personalBackBtn').click(function() {
+        // hide personalSection
+        $('.personalSection').hide();
+
+        // show welcomeSection
+        $('.welcomeSection').show();
+
+        // update progress bar to 1
+        updateProgressBar(0);
+    });
+
+    // logic for financialBackBtn
+    $('#financialBackBtn').click(function() {
+        // hide financialSection
+        $('.financialSection').hide();
+
+        // show personalSection
+        $('.personalSection').show();
+
+        // update progress bar to 2
+        updateProgressBar(1);
+    });
+
+    // logic for financialAssetsBackBtn
+    $('#financialAssetsBackBtn').click(function() {
+        // hide financialAssetsSection
+        $('.financialAssetsSection').hide();
+
+        // show financialSection
+        $('.financialSection').show();
+
+        // update progress bar to 3
+        updateProgressBar(2);
+    });
+
+    // logic for allDoneBackBtn
+    $('#allDoneBackBtn').click(function() {
+        // hide allDoneSection
+        $('.allDoneSection').hide();
+
+        // show financialAssetsSection
+        $('.financialAssetsSection').show();
+
+        // update progress bar to 4
+        updateProgressBar(3);
+    });
 });
