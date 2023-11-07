@@ -177,24 +177,24 @@ $(document).ready(function() {
         // if user is under 18
         if (personalData.age < 18) {
             // show recommendation
-            $('.results table').append("You are under 18, we recommend you speak to your parents about your finances.");
+            $('.results table').append("You are under 18, we recommend you speak to your parents about your finances. <br>");
         }
         // if user is over 18
         else if (personalData.age >= 18) {
             // show recommendation
-            $('.results table').append("You are over 18, we recommend you take out a credit card.");
+            $('.results table').append("You are over 18, we recommend you take out a credit card. <br>");
         }
 
         // check if has both loans
         if (assetsData.shortTermLoan && assetsData.longTermLoan) {
             // show recommendation
-            $('.results table').append("You have both a short term and long term loan, we recommend you consolidate your loans.");
+            $('.results table').append("You have both a short term and long term loan, we recommend you consolidate your loans. <br>");
         }
 
         // check if has stocks or bonds
         if (assetsData.stocks || assetsData.bonds) {
             // show recommendation
-            $('.results table').append("You have stocks or bonds, we recommend you speak to a financial advisor.");
+            $('.results table').append("You have stocks or bonds, we recommend you speak to a financial advisor. <br>");
         }
 
 
