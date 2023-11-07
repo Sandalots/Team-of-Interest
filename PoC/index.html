@@ -71,9 +71,9 @@
       <div class="form-group">
         <label for="dependencyInput">Dependencies: </label>
         <select class="form-control" id="dependencyInput">
-          <option>Children</option>
-          <option>Other Dependency</option>
           <option>None</option>
+          <option>Child</option>
+          <option>Other Dependency</option>
           <option>Prefer not to say</option>
         </select>
       </div>
@@ -98,6 +98,8 @@
         <option>Employed - Full Time</option>
         <option>Unemployed</option>
         <option>Student</option>
+        <option>Retired</option>
+        <option>Other</option>
       </select>
     </div>
 
@@ -120,6 +122,7 @@
         <option> Rent </option>
         <option> Living with Parents </option>
         <option> Other</option>
+        <option> Prefer not to say</option> 
       </select>
     </div>
 
@@ -129,6 +132,7 @@
       <select class="form-control" id="bankruptInput">
         <option> No</option>
         <option> Yes </option>
+        <option> Prefer not to say</option>
       </select>
     </div>
 
@@ -198,6 +202,13 @@
         <label class="form-check-label" for="Savings">
           Savings
         </label><br>
+
+        <!-- Other checkbox  -->
+        <input class="form-check-input" type="checkbox" value="" id="Other">
+        <label class="form-check-label" for="Other">
+          Other
+        </label><br>
+
       </div><br>
 
       <!-- Financial Assets button -->
