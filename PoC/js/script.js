@@ -222,6 +222,13 @@ $(document).ready(function() {
             return false;
         }
 
+        // check if asset other is checked and otherInput is empty
+        if ($('#Other').is(':checked') && $('#otherInput').val() == "") {
+            alert("Please enter your other asset.");
+            return false;
+        }
+
+
 
         // hide allDoneSection
         $('.allDoneSection').hide();
