@@ -77,9 +77,6 @@ $(document).ready(function() {
             gender: gender,
             dependency: dependency
         };
-
-        // test to see if data is being stored in personalData object
-        console.log(personalData);
     });
 
     // if financialInformationBtn id is clicked
@@ -114,9 +111,6 @@ $(document).ready(function() {
             homeStatus: homeStatus,
             bankruptcyStatus: bankruptcyStatus
         };
-
-        // test to see if data is being stored in financialData object
-        console.log(financialData);
     });
 
     // if financialAssetsBtn id is clicked
@@ -160,9 +154,6 @@ $(document).ready(function() {
             stocks: stocks,
             bonds: bonds
         };
-    
-        // test to see if data is being stored in assetsData object
-        console.log(assetsData);
     });
 
     // if restartBtn id is clicked
