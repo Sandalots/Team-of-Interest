@@ -3,9 +3,12 @@
 }
 
 .settings {
-    position: fixed;
-    top: 10px; /* Adjust the top distance as needed */
+    position: relative;
+    float: right;
+    top: 10px;/* Adjust the top distance as needed */
     right: 10px; /* Adjust the right distance as needed */
+    display: flex;
+    align-items: baseline;
 }
 
 .progress-bar {
@@ -33,4 +36,14 @@ th {
 */
 label {
     font-weight: bold;
+}
+
+#SettingsBar {
+    float: right;
+    height: 10%;
+    Width: 110%;
+    background-color: #1c75bc;
+    margin:0px;
+    display: flex;
+    justify-content: flex-end;
 }
