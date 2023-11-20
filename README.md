@@ -2,4 +2,4 @@
 The Team of Interest proof-of-concept repository. <br>
 
 ## Contents
-- The Web App
+- The Web App (index.html)
