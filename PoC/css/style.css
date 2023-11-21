@@ -55,11 +55,16 @@ body {
 
 /* make all text color */
 body {
-    color: black;
+    color: #220515;
 }
 
 /* make form input background color */
 form {
     background-color: #1c75bc;
     border-radius: 5px;
+}
+
+/* style bootsrap button text color */
+.btn-primary, .btn-alert, .btn-success, .btn-danger, .btn-info, .btn-warning {
+    color: #220515;
 }
