@@ -14,7 +14,7 @@
 .progress-bar {
     width: 50%;
     height: 20px; /* Set the desired height for the progress bar */
-    background-color: #f3f3f3;
+    background-color: #bc1c75;
     margin: 0 auto;
     padding: 0;
 }
@@ -22,7 +22,7 @@
 .progress {
     height: 100%;
     width: 0;
-    background-color: #1c75bc;
+    background-color: #bc1c75;
     margin: 0;
     padding: 0;
 }
@@ -46,4 +46,20 @@ label {
     margin:0px;
     display: flex;
     justify-content: flex-end;
+}
+
+/* make background color */
+body {
+    background-color: #bc1c75;
+}
+
+/* make all text color */
+body {
+    color: black;
+}
+
+/* make form input background color */
+form {
+    background-color: #1c75bc;
+    border-radius: 5px;
 }
