@@ -14,7 +14,7 @@
 .progress-bar {
     width: 50%;
     height: 20px; /* Set the desired height for the progress bar */
-    background-image: linear-gradient(to bottom right, #Ffb42d, #ed4702);
+    background-color: #Ffb42d;
     margin: 0 auto;
     padding: 0;
 }
